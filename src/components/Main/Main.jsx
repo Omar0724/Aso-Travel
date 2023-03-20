@@ -85,7 +85,7 @@ const Main=()=> {
                                         <p>{description}</p>
                                     </div>
                                     <button className='btn flex'>
-                                        Details <HiOutlineTag className='icon'/>
+                                        Book <HiOutlineTag className='icon'/>
                                     </button>
                                 </div>
                         </div>
