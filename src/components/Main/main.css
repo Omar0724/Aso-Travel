@@ -131,6 +131,13 @@
   align-self: center;
   font-size: 18px;
 }
+.secContent{
+  display: flex;
+}
+.singleDestination{
+  max-width: 30%;
+  background-color: aqua;
+}
 
 @media screen and (min-width: 500px) {
   .title {

@@ -2,6 +2,7 @@ import React from 'react'
 import img1 from '../../Assets/img1.jpg'
 import img2 from '../../Assets/img2.jpg'
 import img5 from '../../Assets/img5.jpg'
+import './main.css'
 import {HiOutlineLocationMarker} from 'react-icons/hi';
 import {HiOutlineTag} from 'react-icons/hi';
 const Data = [
