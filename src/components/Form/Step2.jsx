@@ -1,7 +1,8 @@
 import React from "react";
-
+import './form.css';
 function Step2({ formData, setFormData }) {
   return (
+    <div className="other-info-container">
     <table>
       <tr>
         <td>
@@ -47,6 +48,7 @@ function Step2({ formData, setFormData }) {
         </td>
       </tr>
     </table>
+    </div>
   );
 }
 

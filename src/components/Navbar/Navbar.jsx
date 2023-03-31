@@ -3,7 +3,7 @@ import './navbar.css';
 import {SiYourtraveldottv} from "react-icons/si";
 import {IoIosCloseCircleOutline} from "react-icons/io";
 import {BiDotsVerticalRounded} from "react-icons/bi";
-
+import { Link } from 'react-router-dom';
 
 
  const Navbar =()=> {
@@ -21,25 +21,25 @@ import {BiDotsVerticalRounded} from "react-icons/bi";
     <section className="navBarSection">
       <header className="header flex">
         <div className="logoDiv">
-          <a href='#' className="logo  flex">
+          <link to='#' className="logo  flex">
             <h1 ><SiYourtraveldottv className="icon"/></h1> 
-            </a>
+            </link>
         </div>
         <div className={active}>
           <ul className="navLists flex">
             <li className="navItem">
-              <a href="#" className='navLink'>Home</a>
+              <link to="#" className='navLink'>Home</link>
             </li>
             <li className="navItem">
-              <a href="#" className='navLink'>Book</a>
+              <link to="" className='navLink'>Book</link>
             </li><li className="navItem">
-              <a href="#" className='navLink'>Package</a>
+              <link to="#" className='navLink'>Package</link>
             </li><li className="navItem">
-              <a href="#" className='navLink'>About</a>
+              <link to="#" className='navLink'>About</link>
             </li><li className="navItem">
-              <a href="#" className='navLink'>Contact</a>
+              <link to="#" className='navLink'>Contact</link>
             </li><li className="navItem">
-              <a href="#" className='navLink'>FAQ</a>
+              <link to="#" className='navLink'>FAQ</link>
             </li>
             <button className='btn'>
               <a href="/"> Book Now</a>

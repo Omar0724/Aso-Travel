@@ -1,8 +1,9 @@
 import React from "react";
-
+import './form.css';
 function Step1({ formData, setFormData }) {
   return (
-    <table>
+    <div className="personainfo-container">
+    <table className="form-table">
       <tr>
         <td>
           <input
@@ -52,6 +53,7 @@ function Step1({ formData, setFormData }) {
       
 
     </table>
+    </div>
   );
 }
 

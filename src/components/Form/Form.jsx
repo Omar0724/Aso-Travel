@@ -3,6 +3,8 @@ import { useState } from 'react';
 import Step1 from './Step1';
 import Step2 from './Step2';
 import Step3 from './Step3';
+import './form.css';
+import Step4 from './Step4';
 
 export default function Form() {
     const [page, setPage] = useState(0);
@@ -18,10 +20,15 @@ export default function Form() {
       dateD:"",
       dateR:"",
       passport:"",
-      class:""
+      class:"",
+      pmethode:"",
+      cardnumber:"",
+      cvc:"",
+      month:"",
+      year:""
     });
   
-    const FormTitles = [ "Personal Info", "Payment Methode","Payment Methode","Payment Methode"];
+    const FormTitles = [ "Personal Info", "Destination","Other Info","Payment Methode"];
   
     const PageDisplay = () => {
       if (page === 0) {
@@ -30,6 +37,8 @@ export default function Form() {
         return <Step2 formData={formData} setFormData={setFormData} />;
       } else if (page === 2) {
         return <Step3 formData={formData} setFormData={setFormData} />;
+      }else if (page === 3) {
+        return <Step4 formData={formData} setFormData={setFormData} />;
       }
     };
   
@@ -37,11 +46,11 @@ export default function Form() {
       <div className="form">
         <div className="progressbar">
           <div
-            style={{ width: page === 0 ? "25%" : page ===1 ? "50%" :page ===3 ? "75%": "100%" ,backgroundColor:"red",height:"10px"}}
+            style={{ width: page === 0 ? "25%" : page ===1 ? "50%" :page ===2 ? "75%": "100%" }}
           ></div>
         </div>
         <div className="form-container">
-          <div className="header">
+          <div className="headerf">
             <h1>{FormTitles[page]}</h1>
           </div>
           <div className="body">{PageDisplay()}</div>
@@ -56,7 +65,7 @@ export default function Form() {
             </button>
             <button
               onClick={() => {
-                if (page === 2) {
+                if (page === 3) {
                   alert("FORM SUBMITTED");
                   console.log(formData);
                 } else {
@@ -64,7 +73,7 @@ export default function Form() {
                 }
               }}
             >
-              {page === 2 ? "Submit" : "Next"}
+              {page === 3 ? "Submit" : "Next"}
             </button>
           </div>
         </div>

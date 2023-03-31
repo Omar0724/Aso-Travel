@@ -1,5 +1,5 @@
 import React from "react";
-
+import './form.css';
 function Step3({ formData, setFormData }) {
   return (
     <table>
@@ -30,7 +30,7 @@ function Step3({ formData, setFormData }) {
           Class : 
           <input type="radio" name="class" value="first class" 
           onChange={(e) => {
-            setFormData({ ...formData, gender: e.target.value });
+            setFormData({ ...formData, class: e.target.value });
           }}/> first class
           <input type="radio" name="class" value="eco class" 
           onChange={(e) => {
