@@ -49,7 +49,7 @@ import {TbApps} from 'react-icons/tb'
                     <span>More Filters</span>
                 </div>
             </div>
-            <div className="homeFooterIcons flex">
+            {/* <div className="homeFooterIcons flex">
                 <div className="rightIcons">
                     <FiFacebook className="icon"/>
                     <AiOutlineInstagram className="icon"/>
@@ -61,7 +61,7 @@ import {TbApps} from 'react-icons/tb'
 
                 
                     </div>
-            </div>
+            </div> */}
             </div>  
     </section>
   )

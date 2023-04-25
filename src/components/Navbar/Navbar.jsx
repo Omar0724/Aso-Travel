@@ -21,28 +21,31 @@ import { Link } from 'react-router-dom';
     <section className="navBarSection">
       <header className="header flex">
         <div className="logoDiv">
-          <link to='#' className="logo  flex">
+          <Link to='#' className="logo  flex">
             <h1 ><SiYourtraveldottv className="icon"/></h1> 
-            </link>
+            </Link>
         </div>
         <div className={active}>
           <ul className="navLists flex">
             <li className="navItem">
-              <link to="#" className='navLink'>Home</link>
+              <Link to="/" className='navLink'>Home</Link>
             </li>
             <li className="navItem">
-              <link to="" className='navLink'>Book</link>
+              <Link to="/booking" className='navLink'>Book</Link>
             </li><li className="navItem">
-              <link to="#" className='navLink'>Package</link>
+              <Link to="/" className='navLink'>Package</Link>
             </li><li className="navItem">
-              <link to="#" className='navLink'>About</link>
+              <Link to="" className='navLink'>About</Link>
             </li><li className="navItem">
-              <link to="#" className='navLink'>Contact</link>
+              <Link to="#" className='navLink'>Contact</Link>
             </li><li className="navItem">
-              <link to="#" className='navLink'>FAQ</link>
+              <Link to="#" className='navLink'>FAQ</Link>
             </li>
             <button className='btn'>
-              <a href="/"> Book Now</a>
+              <Link to="/login"> Login</Link>
+            </button>
+            <button className='btn'>
+              <Link to="/signup"> Sign Up</Link>
             </button>
           </ul>
           <div onClick={removeNavbar} className="closeNavbar" >
