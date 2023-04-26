@@ -3,7 +3,7 @@ import './navbar.css';
 import {SiYourtraveldottv} from "react-icons/si";
 import {IoIosCloseCircleOutline} from "react-icons/io";
 import {BiDotsVerticalRounded} from "react-icons/bi";
-
+import { Link } from 'react-router-dom';
 
 
  const Navbar =()=> {
@@ -21,28 +21,31 @@ import {BiDotsVerticalRounded} from "react-icons/bi";
     <section className="navBarSection">
       <header className="header flex">
         <div className="logoDiv">
-          <a href='#' className="logo  flex">
+          <Link to='#' className="logo  flex">
             <h1 ><SiYourtraveldottv className="icon"/></h1> 
-            </a>
+            </Link>
         </div>
         <div className={active}>
           <ul className="navLists flex">
             <li className="navItem">
-              <a href="#" className='navLink'>Home</a>
+              <Link to="/" className='navLink'>Home</Link>
             </li>
             <li className="navItem">
-              <a href="#" className='navLink'>Book</a>
+              <Link to="/booking" className='navLink'>Book</Link>
             </li><li className="navItem">
-              <a href="#" className='navLink'>Package</a>
+              <Link to="/" className='navLink'>Package</Link>
             </li><li className="navItem">
-              <a href="#" className='navLink'>About</a>
+              <Link to="" className='navLink'>About</Link>
             </li><li className="navItem">
-              <a href="#" className='navLink'>Contact</a>
+              <Link to="#" className='navLink'>Contact</Link>
             </li><li className="navItem">
-              <a href="#" className='navLink'>FAQ</a>
+              <Link to="#" className='navLink'>FAQ</Link>
             </li>
             <button className='btn'>
-              <a href="/"> Book Now</a>
+              <Link to="/login"> Login</Link>
+            </button>
+            <button className='btn'>
+              <Link to="/signup"> Sign Up</Link>
             </button>
           </ul>
           <div onClick={removeNavbar} className="closeNavbar" >

@@ -1,17 +1,29 @@
-import React from 'react';
 import './App.css';
-import Footer from './components/Footer/Footer';
-import Home from './components/Home/Home';
-import Main from './components/Main/Main';
-import Navbar from './components/Navbar/Navbar';
+
+import { BrowserRouter,Routes,Route } from 'react-router-dom';
+import HomePage from './Home_Page';
+import Login from './components/Login/Login';
+import Signup from './components/Signup/Signup';
+import Form from './components/Form/Form';
+import Packages from './components/Packages/Packages';
+import Destination from './components/Destination/Destination';
+import Home1 from './components/Home/Home1';
 
 function App() {
   return (
     <div className="App">
-      <Navbar/>
-      <Home/>
-      <Main/>
-      <Footer/>
+      <BrowserRouter>
+        <Routes>
+          <Route index path='/' element={<HomePage/>}/>
+          <Route path='/login' element={<Login/>}/>
+          <Route path='/signup' element={<Signup/>}/>
+          <Route path='/booking' element={<Form/>}/>
+          <Route path='/Package' element={<Packages/>}/>
+          <Route path='/Home1' element={<Home1/>}/>
+          <Route path='/Destination' element={<Destination/>}/>
+        </Routes>
+      </BrowserRouter>
+      
     </div>
   );
 }

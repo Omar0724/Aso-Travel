@@ -20,7 +20,10 @@
   
   --whiteColorDeam: hsl(0, 0%, 93%);
   
-  --greyText: rgb(190, 190, 190); 
+  --greyText: rgb(190, 190, 190);
+
+  --greyTextRgba:rgba(130, 130, 130,.3);
+
   --inputColor: rgb(239, 239, 239);
   
   --bodyColor: rgb(240, 240, 246);
